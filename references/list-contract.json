@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "target": "list_rows",
+  "list": {
+    "id": "list_156356d43da7",
+    "name": "run_log",
+    "description": "One row per file ranger sweep — summary counts for each run",
+    "collectionId": "coll_2eed0b029aac",
+    "pageId": "bd4f9535-2b3a-4195-8257-9a20e5464b6a",
+    "pipelineId": null,
+    "columns": [
+      {
+        "key": "run_id",
+        "label": "Run ID",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "triggered_at",
+        "label": "Triggered At",
+        "type": "date",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "emails_scanned",
+        "label": "Emails Scanned",
+        "type": "number",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "attachments_found",
+        "label": "Attachments Found",
+        "type": "number",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "auto_filed",
+        "label": "Auto Filed",
+        "type": "number",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "queued",
+        "label": "Queued for Review",
+        "type": "number",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "confirmed",
+        "label": "Confirmed",
+        "type": "number",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "rejected",
+        "label": "Rejected",
+        "type": "number",
+        "required": null,
+        "options": null
+      }
+    ]
+  },
+  "recordsFile": "data/records.json",
+  "import": {
+    "writeMode": "append",
+    "idField": "records[].id",
+    "rowDataPath": "records[].data"
+  }
+}
